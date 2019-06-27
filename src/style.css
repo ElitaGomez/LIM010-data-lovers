@@ -1,0 +1,58 @@
+body{
+    background-image: url(imag/WP\ 1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    text-align: center; 
+}
+.login{
+    background: rgb(236, 232, 232);
+    position: absolute;
+    left: 34.03%;
+    right: 34.03%;
+    top: 24.8%;
+    bottom: 24.8%;
+     box-shadow: 2px 2px 1px rgba(0,0,0,0,1);   
+   
+}
+
+label{
+    color: rgb(44, 43, 48);
+    font-family:'times new roman';
+    font-size: 20px;
+}
+input{
+    margin: 20px;
+    padding: 10PX;
+    border-radius:5px;
+    border: 0;
+
+}
+button{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    color: black
+
+}
+.mostrar{ 
+    display: block;
+}
+.ocultar{
+    display: none;
+}
+@media(max-width:450px){
+ma
+}
+
+
+
+ /*display:flex;
+ flex-flow: column-wrap;
+ margin: 0 auto;
+ background: white;
+ width: 260px;
+  padding: 50px 40px; */

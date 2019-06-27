@@ -6,12 +6,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
+    <header>CLUB POKEMON GOO</header>
+    <main>
+      <div id="login" class="login">  <!--pantalla uno-->
+        <div class="mostrar">
+          <label for="usuario">TU NOMBRE</label>
+          <input type="text" name="usuario" id="name" >
+        </div>
+        <div class="mostrar">
+          <label for="contraseña">CONTRASEÑA</label> 
+          <input type="text" name="contraseña" id="password">
+          <h6>¿Olvidaste tu contraseña?</h6>
+          <p id="error"></p>
+        </div>
+        <div class="mostrar">
+          <button type="boton" id="enviar">ENVIAR</button>
+          <h5>¿No tienes una cuenta?Registrate </h5>
+        </div>
+      </div>
+      <div id="pagina" class="ocultar"> <!--panta dos-->
+        <h1>CLUB POKEMON GO</h1>
+      </div>
+    </main>
+    <footer>
+      
+    </footer>
+    <script src="./data/pokemon/pokemon.js"></script> 
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>

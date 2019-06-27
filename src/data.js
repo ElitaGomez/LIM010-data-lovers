@@ -3,8 +3,19 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
-const example = () => {
-  return 'example';
+const dataPoker = (data) => {
+  let arrayPoke = [];
+  for (let i =0; i< data.length; i++){
+     arrayPoke.push({
+      nombre : data[i].name
+     }) 
+     console.log(dataPoker[i]); 
+    }
+    return arrayPoke;
+   
 };
 
-window.example = example;
+
+window.pokemon= {
+  dataPoker: dataPoker, 
+};
