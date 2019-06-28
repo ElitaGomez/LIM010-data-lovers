@@ -52,11 +52,8 @@ button{
     display: none;
 }
 
+#contenedor{
+    color: beige;
+}
 
 
- /*display:flex;
- flex-flow: column-wrap;
- margin: 0 auto;
- background: white;
- width: 260px;
-  padding: 50px 40px; */
