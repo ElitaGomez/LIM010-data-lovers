@@ -1,0 +1,108 @@
+body{
+    background-image: url(img/FONDO4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    background-position: center center;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center center;
+}
+img {
+  width: 260px;
+  height: rgb(30, 15, 73);
+  border-radius: 20%;
+  border: solid #fff 2px;
+  margin-top: 0px;
+}
+
+.login{
+    background-color:transparent;
+    border: 3px solid hsl(61, 91%, 56%);
+    margin: auto;
+    position: absolute;
+    align-items: center center;
+    left: 490px;
+    right: 490px;
+    top: 254px;
+    height: 516px;
+    width: 460px;
+    bottom: 254px;
+    box-shadow: 2px 2px 1px rgba(81, 104, 180, 0.1);
+}
+ 
+label{
+  height: 45px;
+  width: 335px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;  
+  display: flex;
+  align-items: left;
+  color: #00000c;
+  width: 90%;
+  margin: 1% 0% 1% 0%;
+  display: inline-block;
+ 
+}
+input{
+  height: 45px;
+  width: 335px;
+  margin: 0;
+  padding: 0X;
+  border-radius:5px;
+  font-weight: 200;
+  font-size: 16px;
+  outline: 0px;
+  background-color: #ffffff;
+  border: solid 2px rgb(124, 123, 123);
+  color: #767777;
+    }
+h6{
+  width: 335px;
+  height: 22px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: right;
+  color: #00000c;
+
+}
+button{
+  width: 335px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0x;
+  border: 0;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #14147a;
+  border: 2px solid #f0e551;
+}
+h5{
+  width: 335px;
+  height: 22px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: right;
+  color: #00000c;
+}
+.mostrar{ 
+    display: block;
+ padding-top: 4%;
+}
+.ocultar{
+    display: none;
+}
+
+#contenedor{
+    color: beige;
+}
