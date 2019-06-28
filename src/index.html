@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <form>
-        <div class="login">
-          <label for="email">correo electronico</label>
-          <input type="email" id="email" name="email">
-        </div>
-        <div class="login">
-          <label for="contraseña">contraseña</label>
-          <input type= "password" id="usuario" name="contraseña">
-        </div>
-        <p>¿olvidaste la contraseña?</p>
-        <button type="button" id="ingresa">INGRESA</button>
-        <p>¿no tienes una cuenta? Registrate</p>
-        <p id="error" class="error"></P>
-      </form>
 
-    </main>
-    <footer></footer>
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>CLUB POKEMON GO</header>
+  <main>
+    <div id="login" class="login">
+      <!--pantalla uno-->
+      <div><img src="img/LOGO.jpg" alt="pokelogo"></div>
+      <div class="mostrar">
+        <label for="usuario">Correo electronico</label>
+        <input type="text" name="usuario" id="name">
+      </div>
+      <div class="mostrar">
+        <label for="contraseña">Contraseña</label>
+        <input type="text" name="contraseña" id="password">
+        <h6>¿Olvidaste tu contraseña?</h6>
+        <p id="error"></p>
+      </div>
+      <div class="mostrar">
+        <button type="boton" id="enviar">ENVIAR</button>
+        <h5>¿No tienes una cuenta?Registrate </h5>
+      </div>
+    </div>
+    <div id="pagina" class="ocultar">
+      <!--pantalla dos-->
+      <div><img src="img/LOGO.jpg" alt="pokelogo"></div>
+      <di id="contenedor"></di>
+    </div>
+  </main>
+  <footer>
+  </footer>
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
-
-
