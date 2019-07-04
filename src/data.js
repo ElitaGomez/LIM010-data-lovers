@@ -9,6 +9,8 @@ const dataPoker = (data) => {
      arrayPoke.push({
       nombre : data[i].name,
       imagen : data[i].img,
+      numero : data[i].num,
+        tipo : data[i].type,
     }); 
 
     }
@@ -16,8 +18,20 @@ const dataPoker = (data) => {
    
 };
 
+const filtrarData = (data) => {
+ const filtar = [];
+ for(let i=0; i< data.length; i++){
+   filtar.push({
+     nombre: data[i].name,
+     imagen: data [i].img,
+     numero: data[i].num,
+       type: data[i].type,
+    });
+
+  filtrarData.filter
+ };
 
 window.pokemon = {
   dataPoker: dataPoker, 
-
+  filtrarData: filtrarData,
 };

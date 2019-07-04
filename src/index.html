@@ -9,25 +9,54 @@
     <header>CLUB POKEMON GOO</header>
     <main>
       <div id="login" class="login">  <!--pantalla uno-->
+        <div><img src="imag/LOGO.jpg"alt="pokelogo"></div>
         <div class="mostrar">
-          <label for="usuario">TU NOMBRE</label>
-          <input type="text" name="usuario" id="name" >
+           <label for="usuario">TU NOMBRE</label>
+           <input type="text" name="usuario" id="name" >
         </div>
         <div class="mostrar">
-          <label for="contraseña">CONTRASEÑA</label> 
-          <input type="text" name="contraseña" id="password">
-          <h6>¿Olvidaste tu contraseña?</h6>
-          <p id="error"></p>
+           <label for="contraseña">CONTRASEÑA</label> 
+           <input type="text" name="contraseña" id="password">
+           <h6>¿Olvidaste tu contraseña?</h6>
+           <p id="error"></p>
         </div>
         <div class="mostrar">
-          <button type="boton" id="enviar">ENVIAR</button>
-          <h5>¿No tienes una cuenta?Registrate </h5>
+           <button type="boton" id="enviar">ENVIAR</button>
+           <h5>¿No tienes una cuenta?Registrate </h5>
         </div>
       </div>
-      <div id="pagina" class="ocultar"> <!--panta dos-->
-        <h1>CLUB POKEMON GO</h1>
-        <di id="contenedor"></di>
-      </div>
+      <section id="pagina" class="ocultar"> <!--panta dos-->
+        <header>
+          <img src="imag/LOGO.jpg"alt="pokelogo">
+          <button>INICIO</button>
+        <select id="a-z">
+          <option value="Ascendente">Ascendente A-Z</option>
+          <option value="Descendente">Descendente Z-A</option>
+        </select>
+        <select id="numero">
+          <option value="mayor">numero 1-150</option>
+          <option value="menor">numero 150-1</option>
+        </select>
+        <select id="tipos">
+          <option value="grass">Grass</option>
+          <option value="fire">Fire</option>
+          <option value="water">Water</option>
+          <option value="bug">Bug</option>
+          <option value="flying">Flying</option>
+          <option value="normal">Normal</option>
+          <option value="rock">Rock</option>
+          <option value="ice">Ice</option> 
+          <option value="grost">Ghost</option>
+          <option value="poison">Poison</option>
+          <option value="electric">Electric</option>
+          <option value="ground">Ground</option>
+          <option value="dragon">Dragon</option>
+          <option value="Fighting">Fighting</option>
+          <option value="psychic">Psychic</option>
+        </select>
+        <div id="contenedor"></div>
+      </header>
+      </section>
     </main>
     <footer>
     </footer>
