@@ -12,10 +12,7 @@ body{
 img {
   width: 260px;
   height: rgb(30, 15, 73);
-  border-radius: 20%;
-  border: solid #fff 2px;
-  margin-top: 0px;
-}
+  }
 
 .login{
     background-color:transparent;
@@ -102,7 +99,26 @@ h5{
 .ocultar{
     display: none;
 }
+.contenedor{
+    flex-flow: wrap row;
+    display: flex;
+    padding: 5% 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgpokemon{
+   width: 200px;
+   height: 200px;
+   background: rgb(163, 170, 207);
+   padding: 10px;
+   margin: 20px;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.namepokemon{
+    width: 40px;
+    display: flex;
+    justify-content: center;
 
-#contenedor{
-    color: beige;
 }
