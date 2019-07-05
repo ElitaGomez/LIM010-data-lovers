@@ -48,7 +48,6 @@ enviar.addEventListener('click',() => {
  };
  contenedor.innerHTML = mostrarPoker(pokeData);
 
- const ordenando =()=>{
-     const arrayOrden =[];
-     const abc = ['A',]
- }
+ tipos.addEventListener('change',()  => {
+   contenedor.innerHTML = mostrarPoker(window.pokemon.filtrarData(pokeData,tipos[tipos.selectedIndex].value));
+ });
