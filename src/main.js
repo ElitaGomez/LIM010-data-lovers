@@ -49,5 +49,13 @@ enviar.addEventListener('click',() => {
  contenedor.innerHTML = mostrarPoker(pokeData);
 
  tipos.addEventListener('change',()  => {
-   contenedor.innerHTML = mostrarPoker(window.pokemon.filtrarData(pokeData,tipos[tipos.selectedIndex].value));
+   contenedor.innerHTML = mostrarPoker(window.pokemon.filtrarData(pokeData,tipos.value));
+ });
+
+ ordena.addEventListener('change',() =>{
+   contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaPoke(pokeData,ordena.value));
+ });
+
+ numero.addEventListener('change',() => {
+    contenedor.innerHTML = mostrarPoker(window.pokemon.numeroPoke(pokeData,numero.value));
  });
