@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
-
 <body>
-  <header></header>
+  <header> </header>
   <main>
     <!--pantalla uno-->
-    <div id="login" class="login">
-      <div class="logo"><img src="img/LogoPokemon.png" alt="pokelogo"></div>
+    <section id="cajalogin" class="cajalogin">
       <div class="mostrar">
-        <label for="usuario">Correo electronico</label>
-        <input type="text" name="usuario" id="name">
+        <form class="caja">
+          <div id="logo"><img src="img/POKELOGO.png" class="pokelogo" alt="pokelogo"></div>
+          <label for="usuario">Usuario</label>
+          <input class="cuadrotexto" name="usuario" id="name">
+          <label for="contraseña">Contraseña</label>
+          <input class="cuadrotexto" name="contraseña" id="password">
+          <a class="letra" href="">¿Olvidaste tu cotraseña?</a>
+          <p id="error"></p>
+          <button class="btnenviar" id="btnenviar" type="submit">INGRESA</button>
+          <p id="letras">¿No tienes una cuenta? <a class="letra" href="">Registrate</a></p>
+        </form>
       </div>
-      <div class="mostrar">
-        <label for="contraseña">Contraseña</label>
-        <input type="text" name="contraseña" id="password">
-        <h6>¿Olvidaste tu contraseña?</h6>
-        <p id="error"></p>
+    </section>
+    <section id="pokecaja" class="ocultar">
+      <img src="img/POKELOGO.png" alt="pokelogo"> <!--pantalla dos-->
+      <div class="menubar">
+        <nav class="menu">
+          <ul>
+            <li><a href="#"><span class="primero"><i class="icon icon-house"></i></span>INICIO</a></li>
+            <li><a href="#"><span class="segundo"><i class="icon icon-tag"></i></span>ORDENAR POR LETRA</a>
+              <ul>
+                <li><a href="#">A-Z</a></li>
+                <li><a href="#">Z-A</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span class="tercero"><i class="icon icon-suitcase"></i></span>ORDENAR POR NUMERO</a>
+              <ul>
+                <li><a href="#">1-151</a></li>
+                <li><a href="#">151-1</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span class="cuarto"><i class="icon icon-text"></i></span>TIPOS</a>
+              <ul>
+                <li><a href="#">AGUA</a></li>
+                <li><a href="#">DRAGON</a></li>
+                <li><a href="#">ELECTRICO</a></li>
+                <li><a href="#">FANTASMA</a></li>
+                <li><a href="#">FUEGO</a></li>
+                <li><a href="#">INSECTO</a></li>
+                <li><a href="#">HIELO</a></li>
+                <li><a href="#">LUCHADOR</a></li>
+                <li><a href="#">NORMAL</a></li>
+                <li><a href="#">PLANTA</a></li>
+                <li><a href="#">PSIQUICO</a></li>
+                <li><a href="#">ROCA</a></li>
+                <li><a href="#">SUELO</a></li>
+                <li><a href="#">VENENO</a></li>
+                <li><a href="#">VOLADOR</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="mostrar">
-        <button type="boton" id="enviar">ENVIAR</button>
-        <h5>¿No tienes una cuenta?Registrate </h5>
-      </div>
-    </div>
-    <div id="pagina" class="ocultar">
-
-    <!--pantalla dos-->
-    <div><img src="img/LogoPokemon.png" alt="pokelogo"></div>
       <div id="contenedor"></div>
-
-
-    </div>
+    </section>
   </main>
   <footer>
   </footer>

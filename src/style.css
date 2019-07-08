@@ -1,124 +1,228 @@
 body{
-    background-image: url(img/FONDO4.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100vw 100vh;
-    background-position: center center;
-    text-align: center; 
+    margin: 0;
+    padding:0;
     display: flex;
-    flex-direction: column;
-    align-items: center center;
+    background: url(img/FONDOPOKEMON.jpg);
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
 }
-img {
-  width: 260px;
-  height: rgb(30, 15, 73);
-  }
 
-.login{
-    background-color:transparent;
-    border: 3px solid hsl(61, 91%, 56%);
+.pokelogo{
+    block-size: 130px;
+    margin-bottom: 25px;
+}
+
+.caja{
     margin: auto;
+    display: flex; 
+    flex-flow: column wrap;
+    align-content: center;
+    width: 260px;
+    padding: 50px;
+    background: rgba(248, 246, 246, 0.623);
+    border-radius: 4px;
+    font-size: 16px;
+    border: rgb(191, 195, 212);
     position: absolute;
-    align-items: center center;
+    align-items: center;
     left: 490px;
     right: 490px;
     top: 254px;
     height: 516px;
     width: 460px;
     bottom: 254px;
-    box-shadow: 2px 2px 1px rgba(81, 104, 180, 0.1);
+    box-shadow: 3px 6px 19px 19px rgba(197, 195, 226, 0.81);
 }
- 
-label{
-  height: 45px;
-  width: 335px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;  
-  display: flex;
-  align-items: left;
-  color: #00000c;
-  width: 90%;
-  margin: 1% 0% 1% 0%;
-  display: inline-block;
- 
-}
-input{
-  height: 45px;
-  width: 335px;
-  margin: 0;
-  padding: 0X;
-  border-radius:5px;
-  font-weight: 200;
-  font-size: 16px;
-  outline: 0px;
-  background-color: #ffffff;
-  border: solid 2px rgb(124, 123, 123);
-  color: #767777;
-    }
-h6{
-  width: 335px;
-  height: 22px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  text-align: right;
-  color: #00000c;
 
-}
-button{
-  width: 335px;
-  height: 45px;
-  margin: 0;
-  padding: 0;
-  border-radius: 0x;
-  border: 0;
-  color: #ffffff;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 20px;
-  background-color: #14147a;
-  border: 2px solid #f0e551;
-}
-h5{
-  width: 335px;
-  height: 22px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  text-align: right;
-  color: #00000c;
-}
-.mostrar{ 
-    display: block;
- padding-top: 4%;
-}
-.ocultar{
-    display: none;
-}
-.contenedor{
-    flex-flow: wrap row;
+.right{
     display: flex;
-    padding: 5% 10%;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
-.imgpokemon{
-   width: 200px;
-   height: 200px;
-   background: rgb(163, 170, 207);
-   padding: 10px;
-   margin: 20px;
-   display: flex;
-   justify-content: center;
-   text-align: center;
-}
-.namepokemon{
-    width: 40px;
+
+.center{
     display: flex;
     justify-content: center;
+}
 
+.letra{
+    color: rgba(1, 1, 151, 0.897);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: right;
+    width: 335px;
+    height: 22px;
+    }
+    
+.letras{
+    display: flex;
+    font-size: 14px;
+}
+
+.cuadrotexto{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0 10px 0;
+    border: solid 0.5px rgb(238, 238, 238);
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-items:center;
+}
+
+.btnenviar{
+    height: auto;
+    padding: auto;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #14147a;
+    border: 2px solid #f0e551;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.mostrar {
+  display: block !important;
+}
+
+.ocultar {
+  display: none !important;
+}
+
+.contenedor {
+  flex-flow: wrap row;
+  display: flex;
+  padding: 5% 10%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cajapokemon {
+  width: 250px;
+  height: 250px;
+  background:transparente(48, 48, 197, 0.952);
+  display:inline-block;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 3px 6px 19px 19px rgba(197, 195, 226, 0.81);
+}
+
+.menubar {
+	margin-top:10px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+ 
+.menu {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	max-width:1000px;
+	width:90%;
+}
+ 
+.menu ul {
+	list-style:none;
+}
+ 
+.menu > ul {
+	display:table;
+	width:100%;
+	background:rgb(214, 214, 226);
+	position:relative;
+}
+ 
+.menu > ul li {
+	display:table-cell;
+}
+ 
+/*Sub-menu*/
+.menu > ul > li:hover > ul {
+	display:block;
+	height:100%;
+}
+ 
+.menu > ul > li > ul {
+	display:block;
+	position:absolute;
+	background:rgb(223, 223, 233);
+	left:0;
+	right:0;
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+.menu > ul li a {
+	color:rgb(22, 11, 83);
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+.menu > ul > li > ul > li a:hover {
+	background:#e2e4e4;
+}
+ 
+.menu > ul > li > a span {
+	background:#1b26b9;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+.menu > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+ 
+.menu > ul > li > a:hover > span {
+	top:0;
+}
+ 
+/*Colores*/
+.menu ul li a .primero {
+	background:#55b3e9;
+}
+ 
+.menu ul li a .segundo {
+	background:#f7ec52;
+}
+ 
+.menu ul li a .tercero {
+	background:#f25724;
+}
+ 
+.menu ul li a .cuarto {
+	background:hsl(115, 85%, 43%);
+}
+ 
+.menu ul li a .quinto {
+	background:#db1843;
 }
