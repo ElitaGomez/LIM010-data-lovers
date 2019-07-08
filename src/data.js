@@ -9,6 +9,7 @@ const dataPoker = (data) => {
       numero : data[i].num,
     }); 
 
+    
     }
     return arrayPoke;
    

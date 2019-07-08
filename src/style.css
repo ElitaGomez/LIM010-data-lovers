@@ -83,11 +83,11 @@ body{
 }
 
 .mostrar {
-  display: block !important;
+  display: block;
 }
 
 .ocultar {
-  display: none !important;
+  display: none;
 }
 
 .contenedor {
