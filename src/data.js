@@ -10,6 +10,9 @@ const dataPoker = (data) => {
       imagen : data[i].img,
       numero : data[i].num,
         tipo : data[i].type,
+        Peso : data[i].weight,
+        Altura: data[i].height,
+        nose : data[i].weaknesses,
     }); 
 
     }
@@ -41,24 +44,11 @@ const ordenaPoke = (data,orden ) =>{
    }
 };
 
-//función de orden de 1-151//
-const numeroPoke = (data, numer) =>{
-  data.sort((mas,menos) =>{
-    numer === num;
-    let sube = mas.num;
-    let baja = menos.num;
-    return sube < baja ? -1 : sube > baja ? 1 : 0;
-  });
-   if(numer === 'mayor'){
-     return data;
-   } else{
-     return data.reverse()
-   }
-};
+
 window.pokemon = {
   dataPoker: dataPoker,
   filtrarData:filtrarData,
   ordenaPoke : ordenaPoke,
-  numeroPoke : numeroPoke,
+ 
  
 }; 

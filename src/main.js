@@ -39,6 +39,9 @@ enviar.addEventListener('click',() => {
             <p>Nombre : ${data[i].name}</p>
             <P>Numero : ${data[i].num}</p>
             <p> Tipo  : ${data[i].type}</p>
+            <p> Peso  : ${data[i].weight}</p>
+            <p> Altura: ${data[i].height}</p>
+            <p>       : ${data[i].weaknesses}</p>
          </div>`;
          
          mostrar+= llamado;
@@ -56,6 +59,3 @@ enviar.addEventListener('click',() => {
    contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaPoke(pokeData,ordena.value));
  });
 
- numero.addEventListener('change',() => {
-    contenedor.innerHTML = mostrarPoker(window.pokemon.numeroPoke(pokeData,numero.value));
- });
