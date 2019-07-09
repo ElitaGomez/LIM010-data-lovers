@@ -1,3 +1,5 @@
+
+
 body{
     background-image: url(imag/Fondo1.jpg);
     background-repeat: no-repeat;
@@ -8,6 +10,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center center;
+    margin:0;
+    padding:0;
 }
 .pokelogo{
     block-size: 130px;
@@ -75,10 +79,10 @@ h6{
   padding: 0;
   border-radius: 0x;
   border: 0;
-    padding: 10px;
+  padding: 10px;
   font-weight: 600;
   font-size: 20px;
-    border: 2px solid #f0e551;
+  border: 2px solid #f0e551;
   background: #2530cf;
 	color: #7b7b7b;
 	font-size: 1em;
@@ -100,21 +104,30 @@ h5{
  padding-top: 4%;
 }
 .ocultar{
-    display: none;
+  display: none;
 }
 
-#contenedor{
-    color: rgb(35, 32, 190);
-}
+.vista2{
+  width: 100%;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+  }
+
+.logo2{
+  float:left;
+  }
+
 .contener{
-  width: 250px;
-  height: 350px;
+  width: 200px;
+  height: 300px;
   background:rgb(230, 231, 241);
   display:inline-block;
   justify-content: center;
   text-align: center;
   padding: 30px;
   margin: 20px;
+  border-radius: 1em;
   }
   
 .contener:hover{
@@ -126,35 +139,36 @@ img {
   height: rgb(238, 227, 134);
   margin-top: 0px;
   flex-direction: column-reverse;
-}
+  }
  	    
 #menubar {
-	max-width: 250px;
-	position: relative;
-}
-#menubar select , .btninicio{
-    display: inline-block;
-	width: 150px;
-	cursor: pointer;
-  	padding: 7px 10px;
-  	height: 42px;
-  	outline: 0; 
-  	border: 0;
-	border-radius: 0;
-	background: #f0f0f0;
-	color: #7b7b7b;
-	font-size: 1em;
-	color: #999;
-	font-family: 
-	'Quicksand', sans-serif;
-	border:2px solid rgba(0,0,0,0.2);
-    border-radius: 12px;
-    position: relative;
-    transition: all 0.25s ease;
+  width: 95%;
+  margin:20px;
+  padding:20px;
+  float:center;
+  top:100px;
 }
 
+#menubar select , .btninicio{
+  width: 200px;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 50px;
+  float: center;
+  background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+  color: rgb(7, 73, 10);
+  align-items: center;
+  font-family:'Quicksand', sans-serif;
+  border:2px solid rgba(0,0,0,0.2);
+  border-radius: 10px;
+  transition: all 0.25s ease;
+
+  }
+
 .btninicio:hover{
-    background: #B1E8CD;
+  background: #B1E8CD;
 }
 
 #menubar select:hover{

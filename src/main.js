@@ -12,10 +12,8 @@ const numero = document.getElementById("numero");
 const tipos = document.getElementById("tipos");
 
 
-
 enviar.addEventListener('click',() => {
-    
-    
+        
     if( password.value === '' && name.value===''){
 
         pantallaLogin.classList.toggle("ocultar");
@@ -40,8 +38,7 @@ enviar.addEventListener('click',() => {
             <P>Numero : ${data[i].num}</p>
             <p>Debilidad : ${data[i].weaknesses}</p>
          </div>`;
-         
-         mostrar+= llamado;
+        mostrar+= llamado;
     }
     return mostrar;
 
