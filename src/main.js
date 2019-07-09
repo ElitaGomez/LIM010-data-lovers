@@ -35,7 +35,11 @@ enviar.addEventListener('click',() => {
     for(let i = 0; i< data.length; i++){
        let llamado = `
          <div class="contener">
+         <a>
+         <span>
             <img src ="${data[i].img}"/>
+            </span>
+          </a>
             <p>Nombre : ${data[i].name}</p>
             <P>Numero : ${data[i].num}</p>
             <p> Tipo  : ${data[i].type}</p>
