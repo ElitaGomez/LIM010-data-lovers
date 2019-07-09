@@ -122,9 +122,8 @@ h5{
   }
 
 img {
-  width: 230px;
+  width: 190px;
   height: rgb(238, 227, 134);
-  border: solid rgb(158, 159, 180) 1px;
   margin-top: 0px;
   flex-direction: column-reverse;
 }

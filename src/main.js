@@ -38,7 +38,7 @@ enviar.addEventListener('click',() => {
             <img src ="${data[i].img}"/>
             <p>Nombre : ${data[i].name}</p>
             <P>Numero : ${data[i].num}</p>
-            <p> Debilidad : ${data[i].weaknesses}</p>
+            <p>Debilidad : ${data[i].weaknesses}</p>
          </div>`;
          
          mostrar+= llamado;
