@@ -4,7 +4,7 @@ const pantallaLogin = document.getElementById("login");
 const name = document.getElementById("name");
 const password = document.getElementById("password");
 const error = document.getElementById("error");
-const enviar = document.getElementById("enviar");
+const enviar = document.getElementById("btnenviar");
 const pantallaPagina = document.getElementById("pagina");
 const contenedor = document.getElementById("contenedor");
 const ordena = document.getElementById("a-z");
@@ -16,7 +16,7 @@ const tipos = document.getElementById("tipos");
 enviar.addEventListener('click',() => {
     
     
-    if( password.value === 'LABORATORIA' && name.value==='LABORATORIA'){
+    if( password.value === '' && name.value===''){
 
         pantallaLogin.classList.toggle("ocultar");
         pantallaPagina.classList.toggle("ocultar");
@@ -38,10 +38,7 @@ enviar.addEventListener('click',() => {
             <img src ="${data[i].img}"/>
             <p>Nombre : ${data[i].name}</p>
             <P>Numero : ${data[i].num}</p>
-            <p> Tipo  : ${data[i].type}</p>
-            <p> Peso  : ${data[i].weight}</p>
-            <p> Altura: ${data[i].height}</p>
-            <p>       : ${data[i].weaknesses}</p>
+            <p> Debilidad : ${data[i].weaknesses}</p>
          </div>`;
          
          mostrar+= llamado;
