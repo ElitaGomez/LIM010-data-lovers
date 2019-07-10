@@ -32,13 +32,25 @@ enviar.addEventListener('click',() => {
      let mostrar = '';
     for(let i = 0; i< data.length; i++){
        let llamado = `
-         <div class="contener">
-            <img src ="${data[i].img}"/>
-            <p>Nombre : ${data[i].name}</p>
-            <P>Numero : ${data[i].num}</p>
-            <p>Debilidad : ${data[i].weaknesses}</p>
-         </div>`;
-        mostrar+= llamado;
+        <div class ="flip-card  ">
+          <div class ="flip-card-inner">
+            <div class ="flip-card-front ">
+                <img src ="${data[i].img}"/>
+                <p>Nombre : ${data[i].name}</p>
+                <P>Numero : ${data[i].num}</p>
+                <p>Aparción : ${data[i].avg_spawns}</p>
+            </div>
+            <div class="flip-card-back">
+              <p>Tipo : ${data[i].type}</p>
+              <p>Altura : ${data[i].height}</p>
+              <p>Peso : ${ data[i].weight}</p>
+              <p> Debilidad :${data[i].weaknesses}</p>
+            </div>
+          </div> 
+        </div>
+        `;
+        
+         mostrar+= llamado;
     }
     return mostrar;
 

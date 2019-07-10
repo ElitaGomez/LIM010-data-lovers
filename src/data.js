@@ -9,10 +9,11 @@ const dataPoker = (data) => {
       nombre : data[i].name,
       imagen : data[i].img,
       numero : data[i].num,
+      aparicion: data[i].avg_spawns,
         /*tipo : data[i].type,
         Peso : data[i].weight,
         Altura: data[i].height,*/
-      Debilidad: data[i].weaknesses,
+     
     }); 
 
     }

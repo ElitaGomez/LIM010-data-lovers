@@ -107,33 +107,6 @@ h5{
   display: none;
 }
 
-.vista2{
-  width: 100%;
-  margin: auto;
-  display: block;
-  overflow: hidden;
-  }
-
-.logo2, .busquedapokemon{
-  float:left;
-  }
-
-.contener{
-  width: 200px;
-  height: 300px;
-  background:rgb(230, 231, 241);
-  display:inline-block;
-  justify-content: center;
-  text-align: center;
-  padding: 30px;
-  margin: 20px;
-  border-radius: 1em;
-  align-content: center;
-  }
-  
-.contener:hover{
-    background: #B1E8CD;
-  }
 
 img {
   width: 190px;
@@ -186,3 +159,51 @@ img {
 	margin-top: 3px;
 }
 
+ .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  display: inline-block;
+  align-content: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-right: 100px;
+  margin-left: 20px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #B1E8CD;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgb(238, 227, 134);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+                    
