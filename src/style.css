@@ -114,7 +114,7 @@ h5{
   overflow: hidden;
   }
 
-.logo2{
+.logo2, .busquedapokemon{
   float:left;
   }
 
@@ -128,6 +128,7 @@ h5{
   padding: 30px;
   margin: 20px;
   border-radius: 1em;
+  align-content: center;
   }
   
 .contener:hover{
@@ -149,7 +150,7 @@ img {
   top:100px;
 }
 
-#menubar select , .btninicio{
+#menubar select , .btninicio, #datosbusqueda{
   width: 200px;
   cursor: pointer;
   padding: 7px 10px;
@@ -164,16 +165,10 @@ img {
   border:2px solid rgba(0,0,0,0.2);
   border-radius: 10px;
   transition: all 0.25s ease;
-
   }
 
-.btninicio:hover{
+.btninicio:hover,#menubar select:hover, #datosbusqueda:hover{
   background: #B1E8CD;
-}
-
-#menubar select:hover{
-	background: #B1E8CD;
-
 }
 
 .menubar i{
@@ -190,6 +185,4 @@ img {
 .menubar:hover i{
 	margin-top: 3px;
 }
-
-
 

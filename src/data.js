@@ -45,6 +45,10 @@ const ordenaPoke = (data,orden ) =>{
 };
 
 
+
+
+
+
 window.pokemon = {
   dataPoker: dataPoker,
   filtrarData:filtrarData,

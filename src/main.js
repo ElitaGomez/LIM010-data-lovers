@@ -43,7 +43,9 @@ enviar.addEventListener('click',() => {
     return mostrar;
 
  };
+ 
  contenedor.innerHTML = mostrarPoker(pokeData);
+
 
  tipos.addEventListener('change',()  => {
    contenedor.innerHTML = mostrarPoker(window.pokemon.filtrarData(pokeData,tipos.value));
