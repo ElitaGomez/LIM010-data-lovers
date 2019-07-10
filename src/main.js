@@ -12,10 +12,8 @@ const numero = document.getElementById("numero");
 const tipos = document.getElementById("tipos");
 
 
-
 enviar.addEventListener('click',() => {
-    
-    
+        
     if( password.value === '' && name.value===''){
 
         pantallaLogin.classList.toggle("ocultar");
@@ -57,7 +55,9 @@ enviar.addEventListener('click',() => {
     return mostrar;
 
  };
+ 
  contenedor.innerHTML = mostrarPoker(pokeData);
+
 
  tipos.addEventListener('change',()  => {
    contenedor.innerHTML = mostrarPoker(window.pokemon.filtrarData(pokeData,tipos.value));
