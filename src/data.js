@@ -16,7 +16,7 @@ const dataPoker = (data) => {
         Altura: data[i].height,*/
      
     }); 
-
+  }
 };
 
 //  función de tipos de pokemon//
@@ -69,20 +69,11 @@ const huevoPoke = (data, kilometro) =>{
   })
 };
 
-
-
-
-
-
-
-
-
-
-
 window.pokemon = {
   dataPoker: dataPoker,                     
   filtrarData:filtrarData,
   ordenaPoke : ordenaPoke,  
   huevoPoke:huevoPoke,
+  ordenaAparicion:ordenaAparicion,
  
-}; 
+};
