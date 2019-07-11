@@ -58,9 +58,5 @@ window.pokemon = {
   huevoPoke: huevoPoke,
   ordenaAparicion: ordenaAparicion,
 
-<<<<<<< HEAD
 };
 
-=======
-};
->>>>>>> 87c4e3e87fae22446aa32196647741e1666d1fe8
