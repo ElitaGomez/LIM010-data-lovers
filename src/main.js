@@ -10,6 +10,7 @@ const contenedor = document.getElementById("contenedor");
 const ordena = document.getElementById("a-z");
 const numero = document.getElementById("numero");
 const tipos = document.getElementById("tipos");
+const evolución = document.getElementById("evolución")
 
 
 enviar.addEventListener('click',() => {
@@ -45,6 +46,7 @@ enviar.addEventListener('click',() => {
               <p>Altura : ${data[i].height}</p>
               <p>Peso : ${ data[i].weight}</p>
               <p> Debilidad :${data[i].weaknesses}</p>
+              <p> Huevos : ${data[i].egg}</P>
             </div>
           </div> 
         </div>
@@ -65,5 +67,9 @@ enviar.addEventListener('click',() => {
 
  ordena.addEventListener('change',() =>{
    contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaPoke(pokeData,ordena.value));
+ });
+
+ evolución.addEventListener('change',() =>{
+   contenedor.innerHTML = mostrarPoker(window.pokemon.huevoPoke(pokeData,evolución.value));
  });
 

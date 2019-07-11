@@ -10,6 +10,7 @@ const dataPoker = (data) => {
       imagen : data[i].img,
       numero : data[i].num,
       aparicion: data[i].avg_spawns,
+      huevos : data[i].egg,
         /*tipo : data[i].type,
         Peso : data[i].weight,
         Altura: data[i].height,*/
@@ -44,6 +45,12 @@ const ordenaPoke = (data,orden ) =>{
      return data.reverse()
    }
 };
+  
+const huevoPoke = (data, kilometro) =>{
+  return data.filter((elemt) =>{
+    return elemt.egg.indexOf(kilometro) > -1
+  })
+};
 
 
 
@@ -54,6 +61,6 @@ window.pokemon = {
   dataPoker: dataPoker,                     
   filtrarData:filtrarData,
   ordenaPoke : ordenaPoke,  
- 
+  huevoPoke:huevoPoke,
  
 }; 
