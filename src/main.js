@@ -72,4 +72,6 @@ enviar.addEventListener('click',() => {
  evolución.addEventListener('change',() =>{
    contenedor.innerHTML = mostrarPoker(window.pokemon.huevoPoke(pokeData,evolución.value));
  });
-
+aparicion.addEventListener('change',() =>{
+   contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaAparicion(pokeData,aparicion.value));
+});
