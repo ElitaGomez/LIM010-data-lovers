@@ -10,14 +10,12 @@ const dataPoker = (data) => {
       imagen: data[i].img,
       numero: data[i].num,
       aparicion: data[i].avg_spawns,
-      /*tipo : data[i].type,
-      Peso : data[i].weight,
-      Altura: data[i].height,*/
-
-    });
-
-  }
-  return arrayPoke;
+      huevos : data[i].egg,
+        /*tipo : data[i].type,
+        Peso : data[i].weight,
+        Altura: data[i].height,*/
+     
+    }); 
 
 };
 
@@ -64,6 +62,12 @@ const ordenaAparicion = (data, orden) => {
   }
   return 0;
 };
+  
+const huevoPoke = (data, kilometro) =>{
+  return data.filter((elemt) =>{
+    return elemt.egg.indexOf(kilometro) > -1
+  })
+};
 
 
 
@@ -76,10 +80,9 @@ const ordenaAparicion = (data, orden) => {
 
 
 window.pokemon = {
-  dataPoker: dataPoker,
-  filtrarData: filtrarData,
-  ordenaPoke: ordenaPoke,
-  ordenaAparicion: ordenaAparicion,
-
-
+  dataPoker: dataPoker,                     
+  filtrarData:filtrarData,
+  ordenaPoke : ordenaPoke,  
+  huevoPoke:huevoPoke,
+ 
 }; 
