@@ -8,7 +8,7 @@ const enviar = document.getElementById("btnenviar");
 const pantallaPagina = document.getElementById("pagina");
 const contenedor = document.getElementById("contenedor");
 const ordena = document.getElementById("a-z");
-const numero = document.getElementById("numero");
+const aparicion = document.getElementById("aparicion");
 const tipos = document.getElementById("tipos");
 
 
@@ -38,7 +38,7 @@ enviar.addEventListener('click',() => {
                 <img src ="${data[i].img}"/>
                 <p>Nombre : ${data[i].name}</p>
                 <P>Numero : ${data[i].num}</p>
-                <p>Aparción : ${data[i].avg_spawns}</p>
+                <p>Aparición : ${data[i].avg_spawns}</p>
             </div>
             <div class="flip-card-back">
               <p>Tipo : ${data[i].type}</p>
@@ -66,4 +66,8 @@ enviar.addEventListener('click',() => {
  ordena.addEventListener('change',() =>{
    contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaPoke(pokeData,ordena.value));
  });
+
+ aparicion.addEventListener('change', () => {
+  contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaAparicion(pokeData,aparicion.value));
+});
 
