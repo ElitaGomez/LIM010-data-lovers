@@ -69,9 +69,10 @@ enviar.addEventListener('click',() => {
    contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaPoke(pokeData,ordena.value));
  });
 
- evolución.addEventListener('change',() =>{
-   contenedor.innerHTML = mostrarPoker(window.pokemon.huevoPoke(pokeData,evolución.value));
- });
 aparicion.addEventListener('change',() =>{
    contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaAparicion(pokeData,aparicion.value));
+});
+  
+evolución.addEventListener('change',() =>{
+  contenedor.innerHTML = mostrarPoker(window.pokemon.huevoPoke(pokeData,evolución.value));
 });

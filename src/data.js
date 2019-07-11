@@ -44,6 +44,25 @@ const ordenaPoke = (data, orden) => {
     return data.reverse()
   }
 };
+// funcion ordenar por spawn(menor- mayor)
+const ordenAparicion = (data, orden) =>{
+  const arrAparicion = data.sort((aa,bb) =>{
+    if(aa.avg_spawns > bb.avg_spawns) {
+      return-1;
+    }
+    if(aa.avg_spawns < bb.avg_spawns) {
+      return -1;
+    }
+    return 0;
+  });
+  if (orden === 'mayor'){
+    return arrAparicion;
+  }
+  if(orden === 'menor'){
+    return arrAparicion.reverse();
+  }
+  return 0;
+};
 
 const huevoPoke = (data, kilometro) => {
   return data.filter((elemt) => {
@@ -55,8 +74,7 @@ window.pokemon = {
   dataPoker: dataPoker,
   filtrarData: filtrarData,
   ordenaPoke: ordenaPoke,
-  huevoPoke: huevoPoke,
   ordenaAparicion: ordenaAparicion,
-
+  huevoPoke: huevoPoke,
 };
 
