@@ -10,12 +10,16 @@ const contenedor = document.getElementById("contenedor");
 const ordena = document.getElementById("a-z");
 const aparicion = document.getElementById("aparicion");
 const tipos = document.getElementById("tipos");
-const evolución = document.getElementById("evolución")
+const evolución = document.getElementById("evolución"); 
+const porcentaje = document.getElementById("porcentaje"); 
+const inicio = document.getElementById("inicio"); 
+const debilidad = document.getElementById("debilidad"); 
+
 
 
 enviar.addEventListener('click',() => {
         
-    if( password.value === '' && name.value===''){
+    if( password.value === 'LABORATORIA' && name.value==='LABORATORIA'){
 
         pantallaLogin.classList.toggle("ocultar");
         pantallaPagina.classList.toggle("ocultar");
@@ -72,6 +76,28 @@ enviar.addEventListener('click',() => {
  evolución.addEventListener('change',() =>{
    contenedor.innerHTML = mostrarPoker(window.pokemon.huevoPoke(pokeData,evolución.value));
  });
+
 aparicion.addEventListener('change',() =>{
    contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaAparicion(pokeData,aparicion.value));
+});
+
+debilidad.addEventListener('change',() =>{
+  contenedor.innerHTML = mostrarPoker(window.pokemon.filtrarDebilidad(pokeData,debilidad.value)); //cambio//
+});
+
+
+
+evolucion.addEventListener('change',() =>{
+  const pokeHuevos = window.pokemon.huevoPoke(pokeData,evolucion.value)
+  const cantidadFiltrada = pokeHuevos.length;
+  const porcentajePoke = (cantidadFiltrada/151)*100;
+  porcentaje.value = porcentajePoke
+  contenedor.innerHTML = mostrarPoker(pokeHuevos);  
+});
+
+inicio.addEventListener('click',() =>{
+  name.value = "";
+  password.value = "";
+  pantallaLogin.classList.toggle("ocultar");
+  pantallaPagina.classList.toggle("ocultar"); 
 });

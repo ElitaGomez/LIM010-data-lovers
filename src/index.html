@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<!--cambio-->
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,40 +18,64 @@
       <!--pantalla uno-->
       <div><img src="imag/POKELOGO.png" class="logo" alt="pokelogo"></div>
       <div class="mostrar">
-        <label for="usuario">TU NOMBRE</label>
+        <label for="username">TU NOMBRE</label>
         <input type="text" name="usuario" id="name">
       </div>
       <div class="mostrar">
-        <label for="contraseña">CONTRASEÑA</label>
-        <input type="text" name="contraseña" id="password">
+        <label for="password">CONTRASEÑA</label>
+        <input type="password" name="contraseña" id="password">
         <h6>¿Olvidaste tu contraseña?</h6>
         <p id="error"></p>
       </div>
       <div class="mostrar">
-        <button type="boton" id="btnenviar">ENVIAR</button>
+        <button type="button" id="btnenviar">ENVIAR</button>
         <h5>¿No tienes una cuenta?Registrate </h5>
       </div>
     </div>
     <section id="pagina" class="ocultar">
-      <!--pantalla dos-->
-      <header>
+        <header>
         <div><img src="imag/POKELOGO.png" class="logo2" alt="pokelogo"></div>
-        <p>¡La region de Kanto, el escenario de tu aventura!</p>
+        <strong><p>¡La region de Kanto, el escenario de tu aventura!</p></strong>
       </header>
       <div id="menubar">
-        <button class="btninicio">INICIO</button>
+        <button id="inicio" class="btninicio"><i class="fa fa-home"></i> INICIO </button>
         <select id="a-z">
-          <option value="">¡ORDENALOS YA!</option>
+          <option value=""disabled>¡ORDENALOS YA!</option>
           <option value="Ascendente">A-Z</option>
           <option value="Descendente">Z-A</option>
         </select>
         <select id="aparicion">
-          <option value="">SPAWN TIME</option>
-          <option value="menor">MENOR</option>
+          <option value=""disabled >SPAWN TIME <span style='font-size:100px;'>&#8645;</span></option>
           <option value="mayor">MAYOR</option>
+          <option value="menor">MENOR</option>
         </select>
         <select id="tipos">
-          <option value="">TIPOS</option>
+          <option value="" disabled>TIPOS</option>
+          <option value="Water">AGUA</option>
+          <option value="Dragon">DRAGON </option>
+          <option value="Electric">ELECTRICO</option>
+          <option value="Ghost">FANTASMA</option>
+          <option value="Fire">FUEGO</option>
+          <option value="Ice">HIELO</option>
+          <option value="Bug">INSECTO</option>
+          <option value="Fighting">LUCHADOR</option>
+          <option value="Normal">NORMAL</option>
+          <option value="Grass">PLANTA</option>
+          <option value="Psychic">PSQUICO</option>
+          <option value="Ground">SUELO</option>
+          <option value="Rock">ROCA</option>
+          <option value="Poison">VENENO</option>
+          <option value="Flying">VOLADOR</option>
+        </select>
+        <select id="evolución">
+            <option value=""disabled >HUEVOS</option> 
+            <option value="2 km">2km</option>
+            <option value="5 km">5km</option>
+            <option value="10 km">10km</option>
+            <option value="Not in Eggs">No tiene</option>
+          </select>
+        <select id="debilidad">  
+          <option value=""disabled>DEBILIDAD</option>
           <option value="Water">AGUA</option>
           <option value="Dragon">DRAGON </option>r
           <option value="Electric">ELECTRICO</option>
@@ -65,20 +92,17 @@
           <option value="Poison">VENENO</option>
           <option value="Flying">VOLADOR</option>
         </select>
-        <select id="evolución">
-          <option value="">HUEVOS</option>
-          <option value="2 km">2km</option>
-          <option value="5 km">5km</option>
-          <option value="10 km">10km</option>
-          <option value="Not in Eggs">No tiene</option>
-        </select>
         <i></i>
       </div>
+      <div>
+          <label for="usuario">PORCENTAJE</label>
+          <input type="text" name="usuario" id="porcentaje">
+        </div>
       <div id="contenedor"></div>
     </section>
   </main>
   <footer>
-  </footer>
+   </footer>
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
