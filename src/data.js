@@ -10,13 +10,12 @@ const dataPoker = (data) => {
       imagen: data[i].img,
       numero: data[i].num,
       aparicion: data[i].avg_spawns,
-      huevos : data[i].egg,
-        /*tipo : data[i].type,
-        Peso : data[i].weight,
-        Altura: data[i].height,*/
-     
-    }); 
+      huevos: data[i].egg,
+      tipo : data[i].type,
+    });
+
   }
+  return arrayPoke;
 };
 
 //  función de tipos de pokemon//
@@ -62,7 +61,7 @@ const ordenaAparicion = (data, orden) => {
     }
     return 0;
   });
-  if (orden === 'mayor') {
+  if (orden === 'mayor'){
     return arrAparicion;
   }
   else if(orden === 'menor') {
@@ -70,12 +69,13 @@ const ordenaAparicion = (data, orden) => {
   }
   return 0;
 };
-  
-const huevoPoke = (data, kilometro) =>{
-  return data.filter((elemt) =>{
+
+const huevoPoke = (data, kilometro) => {
+  return data.filter((elemt) => {
     return elemt.egg.indexOf(kilometro) > -1
   })
 };
+
 
 window.pokemon = {
   dataPoker: dataPoker,                     
@@ -85,3 +85,4 @@ window.pokemon = {
   ordenaAparicion:ordenaAparicion,
   filtrarDebilidad : filtrarDebilidad, 
 };
+
