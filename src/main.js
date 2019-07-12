@@ -10,9 +10,11 @@ const contenedor = document.getElementById("contenedor");
 const ordena = document.getElementById("a-z");
 const aparicion = document.getElementById("aparicion");
 const tipos = document.getElementById("tipos");
-const evolucion = document.getElementById("evolucion");
-const porcentaje = document.getElementById("porcentaje");
-const inicio = document.getElementById("inicio")
+const evolucion = document.getElementById("evolucion"); 
+const porcentaje = document.getElementById("porcentaje"); 
+const inicio = document.getElementById("inicio"); 
+const debilidad = document.getElementById("debilidad"); 
+
 
 
 enviar.addEventListener('click',() => {
@@ -76,7 +78,7 @@ aparicion.addEventListener('change',() =>{
 });
   
 debilidad.addEventListener('change',() =>{
-  contenedor.innerHTML = mostrarPoker(window.pokemon.filtrarDebilidad(pokeData,debilidad.value)); //cambio//
+  contenedor.innerHTML = mostrarPoker(window.pokemon.filtrarDebilidad(pokeData,debilidad.value));
 });
 
 
@@ -84,8 +86,8 @@ debilidad.addEventListener('change',() =>{
 evolucion.addEventListener('change',() =>{
   const pokeHuevos = window.pokemon.huevoPoke(pokeData,evolucion.value)
   const cantidadFiltrada = pokeHuevos.length;
-  const porcentajePoke = parseInt((cantidadFiltrada/151)*100);
-  porcentaje.value = porcentajePoke
+  const porcentajePoke = (cantidadFiltrada/151)*100;
+  porcentaje.value = porcentajePoke.toFixed(2)
   contenedor.innerHTML = mostrarPoker(pokeHuevos);  
 });
 
