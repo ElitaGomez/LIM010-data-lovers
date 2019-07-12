@@ -11,10 +11,7 @@ const dataPoker = (data) => {
       numero: data[i].num,
       aparicion: data[i].avg_spawns,
       huevos: data[i].egg,
-      /*tipo : data[i].type,
-      Peso : data[i].weight,
-      Altura: data[i].height,*/
-
+      tipo : data[i].type,
     });
 
   }
@@ -45,12 +42,12 @@ const ordenaPoke = (data, orden) => {
   }
 };
 // funcion ordenar por spawn(menor- mayor)
-const ordenAparicion = (data, orden) =>{
+const ordenaAparicion = (data, orden) =>{
   const arrAparicion = data.sort((aa,bb) =>{
-    if(aa.avg_spawns > bb.avg_spawns) {
-      return-1;
-    }
     if(aa.avg_spawns < bb.avg_spawns) {
+      return 1;
+    }
+    if(aa.avg_spawns > bb.avg_spawns) {
       return -1;
     }
     return 0;
@@ -69,6 +66,7 @@ const huevoPoke = (data, kilometro) => {
     return elemt.egg.indexOf(kilometro) > -1
   })
 };
+
 
 window.pokemon = {
   dataPoker: dataPoker,

@@ -36,19 +36,19 @@
         <p>¡La region de Kanto, el escenario de tu aventura!</p>
       </header>
       <div id="menubar">
-        <button class="btninicio">INICIO</button>
+        <button id="inicio"class="btninicio">INICIO</button>
         <select id="a-z">
-          <option value="">¡ORDENALOS YA!</option>
+          <option value=""disabled>¡ORDENALOS YA!</option>
           <option value="Ascendente">A-Z</option>
           <option value="Descendente">Z-A</option>
         </select>
         <select id="aparicion">
-          <option value="">SPAWN TIME</option>
-          <option value="menor">MENOR</option>
+          <option value=""disabled>SPAWN TIME</option>
           <option value="mayor">MAYOR</option>
+          <option value="menor">MENOR</option>
         </select>
         <select id="tipos">
-          <option value="">TIPOS</option>
+          <option value=""disabled>TIPOS</option>
           <option value="Water">AGUA</option>
           <option value="Dragon">DRAGON </option>r
           <option value="Electric">ELECTRICO</option>
@@ -65,14 +65,18 @@
           <option value="Poison">VENENO</option>
           <option value="Flying">VOLADOR</option>
         </select>
-        <select id="evolución">
-          <option value="">HUEVOS</option>
+        <select id="evolucion">
+          <option value=""disabled>HUEVOS</option>
           <option value="2 km">2km</option>
           <option value="5 km">5km</option>
           <option value="10 km">10km</option>
           <option value="Not in Eggs">No tiene</option>
         </select>
         <i></i>
+        <div>
+          <label for="usuario">PORCENTAJE</label>
+          <input type="text" name="usuario" id="porcentaje">
+        </div>
       </div>
       <div id="contenedor"></div>
     </section>
