@@ -76,7 +76,7 @@ enviar.addEventListener('click',() => {
 aparicion.addEventListener('change',() =>{
    contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaAparicion(pokeData,aparicion.value));
 });
-
+  
 debilidad.addEventListener('change',() =>{
   contenedor.innerHTML = mostrarPoker(window.pokemon.filtrarDebilidad(pokeData,debilidad.value));
 });
@@ -95,5 +95,5 @@ inicio.addEventListener('click',() =>{
   name.value = "";
   password.value = "";
   pantallaLogin.classList.toggle("ocultar");
-  pantallaPagina.classList.toggle("ocultar"); 
+  pantallaPagina.classList.toggle("ocultar");
 });
