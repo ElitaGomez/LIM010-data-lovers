@@ -40,9 +40,9 @@ enviar.addEventListener('click',() => {
         <div class ="flip-card  ">
           <div class ="flip-card-inner">
             <div class ="flip-card-front ">
+                <P class="numero">${data[i].num}</p>
                 <img src ="${data[i].img}"/>
-                <p>Nombre : ${data[i].name}</p>
-                <P>Numero : ${data[i].num}</p>
+                <p>${data[i].name}</p>
                 <p>Aparición : ${data[i].avg_spawns}</p>
             </div>
             <div class="flip-card-back">
