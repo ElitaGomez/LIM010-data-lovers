@@ -1,19 +1,22 @@
 *{
-  padding: 0%;
-  margin: 0%;
+  margin: 0;
+  padding: 0;
 }
 
+/*ESTILO GENERAL*/
+
 body{
-    background-image: url(imag/Fondo1.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100vw 100vh;
-    background-position: center center;
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    align-items: center center;
+  background-image: url(imag/FONDO1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center center;
+  text-align: center; 
+  display: flex;
+  align-items: center center;
 }
+
+/*VISTA LOGIN*/
 
 .logo {
   width: 190px;
@@ -22,19 +25,29 @@ body{
   flex-direction: column-reverse;
   }
 
+/*CAJA FORMULARIO*/
+
 .login{
-    background-color: transparent;
-    border: 3px solid hsl(60, 9%, 75%);
-    margin: auto;
-    position: absolute;
-    align-items: center;
-    left: 490px;
-    right: 490px;
-    top: 254px;
-    height: 516px;
-    width: 460px;
-    bottom: 254px;
-    box-shadow: 2px 2px 1px rgba(81, 104, 180, 0.1);
+  height:536px;
+  width: 310x;
+  background: rgba(248, 246, 246, 0.623);
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  display: flex;  
+  align-content: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .50);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-align: stretch;
+  -webkit-box-pack: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   }
  
 label{
@@ -46,7 +59,8 @@ label{
   font-size: 16px;  
   display: flex;
   align-items: left;
-  color: #00000c;
+  color: #080692;
+  font-size: 1.2em;
   width: 90%;
   margin: 1% 0% 1% 0%;
   display: inline-block;
@@ -62,8 +76,8 @@ input{
   font-size: 16px;
   outline: 0px;
   background-color: #ffffff;
-  border: solid 2px rgb(124, 123, 123);
-  color: #767777;
+  border: solid 2px rgb(20, 3, 116);
+  color: #080130;
   }
 
 h6{
@@ -74,7 +88,14 @@ h6{
   font-weight: bold;
   font-size: 12px;
   text-align: right;
-  color: #00000c;
+  color: #020318;
+}
+
+#error{
+	text-align: center;
+	font-size: 16px;
+	padding: 1em;
+	color: red; 
 }
 
 #btnenviar{
@@ -102,7 +123,8 @@ h5{
   font-weight: bold;
   font-size: 12px;
   text-align: right;
-  color: #00000c;
+  color: #020318;
+  text-align: center,
 }
 
 .mostrar{ 
@@ -113,11 +135,27 @@ h5{
   display: none;
 }
 
+/*Vista pokemones*/
+
+#contenedor{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  padding: 10% 5%;
+  align-items: center;
+}
+
 .logo2{
   block-size: 130px;
   margin-bottom: 25px;
   float:center;
   max-width: 100%;
+}
+
+.texto{
+font-size: 1.5em;
+color: rgb(7, 7, 124);
+
 }
 
 #menubar {
@@ -133,18 +171,18 @@ h5{
   align-items: center;
 }
 
-#menubar select , .btninicio, #datosbusqueda{
+#menubar select , .btninicio {
   width: 160px;
   height: 50px;
   padding: 7px 10px;
-  background: blue;
-	color: #e2ec4f;
+  background: #2530cf;
+	color: #f1ee0c;
 	font-size: 1em;
-  color: #eef4f5;
+	color: #f1ee0c;
   text-align-last: center;
   cursor: pointer;
-  font-family:'Quicksand', sans-serif;
-  border:1px solid rgba(235, 247, 78, 0.918);
+  font-family:open sans;
+  border:2px solid rgba(65, 127, 243, 0.918);
   border-radius: 5px;
   transition: all 0.25s ease;
 }
@@ -165,18 +203,59 @@ select{
   
 }
 
-.btninicio:hover,#menubar select:hover, #datosbusqueda:hover{
-  background: rgb(232, 240, 161);
+#porcentaje{
+  height: 45px;
+  width: 160px;
+  text-align-last: center;
+  border-radius:5px;
+  font-weight: 200;
+  font-size: 1em;
+  outline: 0px;
+  background-color: #f5eb60;
+  border: solid 2px rgb(22, 22, 170);
+  color: #2530cf;
+
+}
+
+.btninicio:hover,#menubar select:hover{
+  background: rgb(5, 141, 50);
 }
 
 .menubar:hover i{
 	margin-top: 3px;
 }
 
+@media all and  (max-width: 400px) {
+
+#contenedor{
+ width: 100%;
+justify-content: center;
+}
+
+.logo2{
+width:50%;
+}
+
+.texto{
+font-size: 1em;
+}
+
+#menubar {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#menubar select, .btninicio, #porcentaje{
+    -webkit-order: 0;
+    order: 0;
+}
+}   
+
  .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
   perspective: 1000px;
   display: inline-block;
   align-content: center;
@@ -209,16 +288,49 @@ select{
 }
 
 .flip-card-front {
-  background-color: rgb(224, 228, 233);
-  color: rgb(9, 90, 36);
-  border: #2530cf;
+  background: rgba(111,162,200,0.11);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(111,162,200,0.11) 0%, rgba(111,162,200,0.44) 24%, rgba(109,160,199,0.78) 48%, rgba(88,136,193,0.9) 57%, rgba(28,70,176,0.9) 82%, rgba(28,70,176,0.9) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(111,162,200,0.11)), color-stop(24%, rgba(111,162,200,0.44)), color-stop(48%, rgba(109,160,199,0.78)), color-stop(57%, rgba(88,136,193,0.9)), color-stop(82%, rgba(28,70,176,0.9)), color-stop(100%, rgba(28,70,176,0.9)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(111,162,200,0.11) 0%, rgba(111,162,200,0.44) 24%, rgba(109,160,199,0.78) 48%, rgba(88,136,193,0.9) 57%, rgba(28,70,176,0.9) 82%, rgba(28,70,176,0.9) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(111,162,200,0.11) 0%, rgba(111,162,200,0.44) 24%, rgba(109,160,199,0.78) 48%, rgba(88,136,193,0.9) 57%, rgba(28,70,176,0.9) 82%, rgba(28,70,176,0.9) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(111,162,200,0.11) 0%, rgba(111,162,200,0.44) 24%, rgba(109,160,199,0.78) 48%, rgba(88,136,193,0.9) 57%, rgba(28,70,176,0.9) 82%, rgba(28,70,176,0.9) 100%);
+  background: radial-gradient(ellipse at center, rgba(111,162,200,0.11) 0%, rgba(111,162,200,0.44) 24%, rgba(109,160,199,0.78) 48%, rgba(88,136,193,0.9) 57%, rgba(28,70,176,0.9) 82%, rgba(28,70,176,0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fa2c8', endColorstr='#1c46b0', GradientType=1 );
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 13px 101px 0px rgba(39,88,186,0.49);
+  -moz-box-shadow: 10px 13px 101px 0px rgba(39,88,186,0.49);
+  box-shadow: 10px 13px 101px 0px rgba(39,88,186,0.49);
+  color: rgb(11, 49, 131);
+  font-size: 1.5em;
+}
+
+.numero{
+  color: rgb(241, 245, 21);
+  font-size: 1.5em;
 }
 
 .flip-card-back {
-  background-color: rgb(238, 227, 134);
-  color: rgb(9, 90, 36);
+  background: rgba(111,162,200,0.52);
+  background: -moz-linear-gradient(left, rgba(111,162,200,0.52) 23%, rgba(109,160,199,0.81) 52%, rgba(109,160,199,0.82) 53%, rgba(106,157,198,0.83) 54%, rgba(111,162,200,0.83) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(23%, rgba(111,162,200,0.52)), color-stop(52%, rgba(109,160,199,0.81)), color-stop(53%, rgba(109,160,199,0.82)), color-stop(54%, rgba(106,157,198,0.83)), color-stop(100%, rgba(111,162,200,0.83)));
+  background: -webkit-linear-gradient(left, rgba(111,162,200,0.52) 23%, rgba(109,160,199,0.81) 52%, rgba(109,160,199,0.82) 53%, rgba(106,157,198,0.83) 54%, rgba(111,162,200,0.83) 100%);
+  background: -o-linear-gradient(left, rgba(111,162,200,0.52) 23%, rgba(109,160,199,0.81) 52%, rgba(109,160,199,0.82) 53%, rgba(106,157,198,0.83) 54%, rgba(111,162,200,0.83) 100%);
+  background: -ms-linear-gradient(left, rgba(111,162,200,0.52) 23%, rgba(109,160,199,0.81) 52%, rgba(109,160,199,0.82) 53%, rgba(106,157,198,0.83) 54%, rgba(111,162,200,0.83) 100%);
+  background: linear-gradient(to right, rgba(111,162,200,0.52) 23%, rgba(109,160,199,0.81) 52%, rgba(109,160,199,0.82) 53%, rgba(106,157,198,0.83) 54%, rgba(111,162,200,0.83) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fa2c8', endColorstr='#6fa2c8', GradientType=1 );
+  border-radius: 5px;
+  color: rgb(15, 25, 172);
   transform: rotateY(180deg);
+  text-align: center;
+    
 }
 
+@media all and (max-width:400px ){
+.flip-card {
+  width: 50%;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
 
-                    
+}               
