@@ -97,3 +97,10 @@ inicio.addEventListener('click',() =>{
   pantallaLogin.classList.toggle("ocultar");
   pantallaPagina.classList.toggle("ocultar");
 });
+//Funcinalidad  para mostrar el menú en pantalla pequeña//
+const burger = document.getElementById("burger");
+const menuBar = document.getElementById("menubar");
+
+burger.addEventListener('click',() =>{
+menuBar.classList.toggle("visible");
+});
