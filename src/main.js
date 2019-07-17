@@ -62,23 +62,41 @@ enviar.addEventListener('click',() => {
 
  };
  
- contenedor.innerHTML = mostrarPoker(pokeData);
+ const llenarPoke = (data) => {
+   contenedor.innerHTML = mostrarPoker(data);
+}
 
+llenarPoke(pokeData)
 
  tipos.addEventListener('change',()  => {
-   contenedor.innerHTML = mostrarPoker(window.pokemon.filtrarData(pokeData,tipos.value));
+  if(tipos.value === "") {
+    llenarPoke(pokeData);
+  }
+  else
+    llenarPoke(window.pokemon.filtrarData(pokeData,tipos.value));
  });
 
  ordena.addEventListener('change',() =>{
-   contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaPoke(pokeData,ordena.value));
+   if(ordena.value === ""){
+    llenarPoke(pokeData);
+   }
+   else
+   llenarPoke(window.pokemon.ordenaPoke(pokeData,ordena.value));
  });
 
 aparicion.addEventListener('change',() =>{
-   contenedor.innerHTML = mostrarPoker(window.pokemon.ordenaAparicion(pokeData,aparicion.value));
+  if(aparicion.value === ""){
+  llenarPoke(pokeData);
+  }
+  else
+   llenarPoke(window.pokemon.ordenaAparicion(pokeData,aparicion.value));
 });
   
 debilidad.addEventListener('change',() =>{
-  contenedor.innerHTML = mostrarPoker(window.pokemon.filtrarDebilidad(pokeData,debilidad.value));
+  if(debilidad.value === "")
+  llenarPoke(pokeData);
+  else
+  llenarPoke(window.pokemon.filtrarDebilidad(pokeData,debilidad.value));
 });
 
 
