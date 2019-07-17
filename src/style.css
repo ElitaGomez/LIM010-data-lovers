@@ -262,13 +262,8 @@ select{
 
  .flip-card {
   background-color: transparent;
-<<<<<<< HEAD
-  width: 240px;
-  height: 240px;
-=======
   width: 220px;
   height: 245px;
->>>>>>> 0ee5aab7338bb5f61dd1cb5f81eae32b7bab163b
   perspective: 1000px;
   display: inline-block;
   align-content: center;
