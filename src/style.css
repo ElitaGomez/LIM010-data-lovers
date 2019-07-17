@@ -16,6 +16,10 @@ body{
   align-items: center center;
 }
 
+#pagina {
+  width: 100vw;
+}
+
 /*VISTA LOGIN*/
 
 .logo {
@@ -51,8 +55,8 @@ body{
   }
  
 label{
-  height: 45px;
-  width: 335px;
+  height: 20px;
+  width: 200px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -229,37 +233,42 @@ select{
 	margin-top: 3px;
 }
 
-@media all and  (max-width: 400px) {
+@media all and  (max-width: 480px) {
 
-#contenedor{
- width: 100%;
-justify-content: center;
-}
+  #contenedor{
+  width: 100%;
+  justify-content: center;
+  }
 
-.logo2{
-width:50%;
-}
+  .logo2{
+  width:50%;
+  }
 
-.texto{
-font-size: 1em;
-}
+  .texto{
+  font-size: 1em;
+  }
 
-#menubar {
-    -webkit-flex-flow: column;
-    flex-flow: column;
-    justify-content: center;
-}
+  #menubar {
+      -webkit-flex-flow: column;
+      flex-flow: column;
+      justify-content: center;
+  }
 
-#menubar select, .btninicio, #porcentaje{
-    -webkit-order: 0;
-    order: 0;
-}
+  #menubar select, .btninicio, #porcentaje{
+      -webkit-order: 0;
+      order: 0;
+  }
 }   
 
  .flip-card {
   background-color: transparent;
+<<<<<<< HEAD
   width: 240px;
   height: 240px;
+=======
+  width: 220px;
+  height: 245px;
+>>>>>>> 0ee5aab7338bb5f61dd1cb5f81eae32b7bab163b
   perspective: 1000px;
   display: inline-block;
   align-content: center;
@@ -315,38 +324,47 @@ font-size: 1em;
 }
 
 .flip-card-back {
-  background: rgba(111,162,200,0.52);
-  background: -moz-linear-gradient(left, rgba(111,162,200,0.52) 23%, rgba(109,160,199,0.81) 52%, rgba(109,160,199,0.82) 53%, rgba(106,157,198,0.83) 54%, rgba(111,162,200,0.83) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(23%, rgba(111,162,200,0.52)), color-stop(52%, rgba(109,160,199,0.81)), color-stop(53%, rgba(109,160,199,0.82)), color-stop(54%, rgba(106,157,198,0.83)), color-stop(100%, rgba(111,162,200,0.83)));
-  background: -webkit-linear-gradient(left, rgba(111,162,200,0.52) 23%, rgba(109,160,199,0.81) 52%, rgba(109,160,199,0.82) 53%, rgba(106,157,198,0.83) 54%, rgba(111,162,200,0.83) 100%);
-  background: -o-linear-gradient(left, rgba(111,162,200,0.52) 23%, rgba(109,160,199,0.81) 52%, rgba(109,160,199,0.82) 53%, rgba(106,157,198,0.83) 54%, rgba(111,162,200,0.83) 100%);
-  background: -ms-linear-gradient(left, rgba(111,162,200,0.52) 23%, rgba(109,160,199,0.81) 52%, rgba(109,160,199,0.82) 53%, rgba(106,157,198,0.83) 54%, rgba(111,162,200,0.83) 100%);
-  background: linear-gradient(to right, rgba(111,162,200,0.52) 23%, rgba(109,160,199,0.81) 52%, rgba(109,160,199,0.82) 53%, rgba(106,157,198,0.83) 54%, rgba(111,162,200,0.83) 100%);
+  background: rgba(111,162,200,1);
+  background: -moz-linear-gradient(left, rgba(111,162,200,1) 23%, rgba(109,160,199,1) 52%, rgba(109,160,199,1) 53%, rgba(106,157,198,1) 54%, rgba(111,162,200,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(23%, rgba(111,162,200,1)), color-stop(52%, rgba(109,160,199,1)), color-stop(53%, rgba(109,160,199,1)), color-stop(54%, rgba(106,157,198,1)), color-stop(100%, rgba(111,162,200,1)));
+  background: -webkit-linear-gradient(left, rgba(111,162,200,1) 23%, rgba(109,160,199,1) 52%, rgba(109,160,199,1) 53%, rgba(106,157,198,1) 54%, rgba(111,162,200,1) 100%);
+  background: -o-linear-gradient(left, rgba(111,162,200,1) 23%, rgba(109,160,199,1) 52%, rgba(109,160,199,1) 53%, rgba(106,157,198,1) 54%, rgba(111,162,200,1) 100%);
+  background: -ms-linear-gradient(left, rgba(111,162,200,1) 23%, rgba(109,160,199,1) 52%, rgba(109,160,199,1) 53%, rgba(106,157,198,1) 54%, rgba(111,162,200,1) 100%);
+  background: linear-gradient(to right, rgba(111,162,200,1) 23%, rgba(109,160,199,1) 52%, rgba(109,160,199,1) 53%, rgba(106,157,198,1) 54%, rgba(111,162,200,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fa2c8', endColorstr='#6fa2c8', GradientType=1 );
   border-radius: 5px;
-  color: rgb(15, 25, 172);
+  color: #fff;
   transform: rotateY(180deg);
   text-align: center;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-@media all and (max-width:400px ){
-.flip-card {
-  width: 50%;
-  margin-right: 20px;
-  margin-top: 10px;
-  margin-left: 20px;
-}
+@media all and (max-width:480px ){
+  .flip-card {
+    width: 50%;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
 
-.encabezado .burger{
-  display: block;
-}
+  .encabezado .burger{
+    display: block;
+  }
 
-#menubar{
-  display: none;
-}
-.visible{
-  display: flex !important ;
-}
+  #menubar{
+    display: none;
+  }
+  .visible{
+    display: flex !important ;
+  }
 
+  .login {
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
 } 
+ 

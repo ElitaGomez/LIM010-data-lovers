@@ -37,23 +37,23 @@ const filtrarDebilidad = (data, debilidad) =>{
 
   //función de orde a-z//
 const ordenaPoke = (data, orden) => {
-  data.sort((az, za) => {
+  const ordenado = data.slice().sort((az, za) => {
     orden === name;
     let ascendente = az.name.toLowerCase();
     let decendente = za.name.toLowerCase();
     return ascendente < decendente ? -1 : ascendente > decendente ? 1 : 0;
   });
   if (orden === 'Ascendente') {
-    return data;
+    return ordenado;
   } else {
-    return data.reverse()
+    return ordenado.reverse()
   }
 };
 
 
 //funcion ordenar por spawn(menor-mayor)//
 const ordenaAparicion = (data, orden) => {
-  const arrAparicion = data.sort((aa, bb) => {
+  const arrAparicion = data.slice().sort((aa, bb) => {
     if (aa.avg_spawns < bb.avg_spawns) {
       return 1;
     } else if (aa.avg_spawns > bb.avg_spawns) {
