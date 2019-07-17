@@ -19,7 +19,7 @@ const debilidad = document.getElementById("debilidad");
 
 enviar.addEventListener('click',() => {
         
-    if( password.value === '' && name.value===''){
+    if( password.value === 'LABORATORIA' && name.value==='LABORATORIA'){
 
         pantallaLogin.classList.toggle("ocultar");
         pantallaPagina.classList.toggle("ocultar");
