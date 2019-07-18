@@ -92,7 +92,7 @@ h6{
   font-weight: bold;
   font-size: 12px;
   text-align: right;
-  color: #020318;
+  color: #080692;
 }
 
 #error{
@@ -125,9 +125,9 @@ h5{
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 1em;
   text-align: right;
-  color: #020318;
+  color: #080692;
   text-align: center,
 }
 
@@ -252,6 +252,7 @@ select{
       -webkit-flex-flow: column;
       flex-flow: column;
       justify-content: center;
+      display:none;
   }
 
   #menubar select, .btninicio, #porcentaje{

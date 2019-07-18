@@ -1,4 +1,5 @@
 # CLUB POKEMON GO
+* * *
 
 “CLUB POKEMON” sirve como una guía interactiva y de apoyo visual, donde podrás encontrar informacion de interes para volverte un experto en el juego PokémonGo. la web contiene la información y características necesarias de los 151 primeros pokemones de la región de Kanto. Su manejo es simple e intuitivo, lo que permite al usuario generar una experincia grata. 
 ***
@@ -16,7 +17,7 @@ Buscando en la web se evidenció que hacen falta páginas enfocadas, exclusivame
 ***
 
 ## HISTORIAS DE USUARIO
-**CONTEXTO GENERAL: - Nuestra historias de usuario se definen en base al siguiente contexto: 
+**CONTEXTO GENERAL**: - Nuestras historias de usuario se definen en base al siguiente contexto: 
 
  "Después de mucho tiempo estás volviendo a retomar el juego y quieres empezar a pelear en gimnasios pero, necesitas saber más sobre las debilidades y caracteristicas generales de tus pokemon para asi poder pelear.
 
@@ -47,9 +48,10 @@ Buscando en la web se evidenció que hacen falta páginas enfocadas, exclusivame
 ## DISEÑO DE LA INTERFAZ DE USUARIO
 **Prototipo de baja fidelidad** : Hemos trabajado aqui, los primeros pasos para llegar a la aplicación web y definir la información que contendrá esta misma, además de sus elementos.
 
-![LOGIN PAPEL](LOGIN.png "LOGIN")
+![Login](imag/LOGIN.png)
 
-![HOME PAPEL](HOME.png "HOME")
+![Home](HOME.png)
+
 
 ***
 
