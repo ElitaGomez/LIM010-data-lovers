@@ -22,7 +22,7 @@ const ordenaPoke = (data, orden) => {
     orden === name;
     let ascendente = az.name.toLowerCase();
     let decendente = za.name.toLowerCase();
-    return ascendente < decendente ? -1 : ascendente > decendente ? 1 : 0;
+    return ascendente < decendente ? -1 : 1 ; 
   });
   if (orden === 'Ascendente') {
     return ordenado;
@@ -36,13 +36,13 @@ const ordenaAparicion = (data, orden) => {
   const arrAparicion = data.slice().sort((aa, bb) => {
     if (aa.avg_spawns < bb.avg_spawns) {
       return 1;
-    } else if (aa.avg_spawns > bb.avg_spawns) {
+    } else {
       return -1;
     }
   });
   if (orden === 'mayor') {
     return arrAparicion;
-  } else if (orden === 'menor') {
+  } else {
     return arrAparicion.reverse();
   };
 }; 
