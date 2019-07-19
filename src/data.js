@@ -8,14 +8,13 @@ const filtrarData = (data, tipo) => {
   });
 };
 
-// funcion filtro por debilidad//------
+// funcion filtro por debilidad//
 
 const filtrarDebilidad = (data, debilidad) =>{
-  return data.filter(element=>{
+  return data.filter(element => {
     return element.weaknesses.indexOf(debilidad) > -1;
   });
 };
-
 
 // función de orde a-z//
 const ordenaPoke = (data, orden) => {
@@ -27,11 +26,10 @@ const ordenaPoke = (data, orden) => {
   });
   if (orden === 'Ascendente') {
     return ordenado;
-  } else {
+  } else {               
     return ordenado.reverse();
   }
 };
-
 
 // funcion ordenar por spawn(menor-mayor)//
 const ordenaAparicion = (data, orden) => {
@@ -41,15 +39,13 @@ const ordenaAparicion = (data, orden) => {
     } else if (aa.avg_spawns > bb.avg_spawns) {
       return -1;
     }
-    return 0;
   });
   if (orden === 'mayor') {
     return arrAparicion;
   } else if (orden === 'menor') {
     return arrAparicion.reverse();
-  }
-  return 0;
-};
+  };
+}; 
 
 const huevoPoke = (data, kilometro) => {
   return data.filter((elemt) => {
@@ -58,8 +54,7 @@ const huevoPoke = (data, kilometro) => {
 };
 
 
-window.pokemon = {
-  dataPoker: dataPoker,                     
+window.pokemon = {                    
   filtrarData: filtrarData,
   ordenaPoke: ordenaPoke,  
   huevoPoke: huevoPoke,
