@@ -7,7 +7,7 @@
 
 Al igual que en los demás países, Pokémon Go causó furor en nuestro país, convirtiéndose en tendencia para miles. Un videojuego, cuyo atractivo principal es la de la realidad aumentada, que te lleva por un viaje de diversión, pero también cargado de nostalgia. Sin embargo, las distintas responsabilidades del día a dáa han llevado a muchos seguidores del juego a dejarlo de lado, con la esperanza de retomarlo más adelante. Es ahí cuando surge la idea de crear una pagina amigable y sencilla que sirva como guía al antiguo jugador y pueda reencontrarse con distintos datos de los pokemones que le servirán para renudar con el juego.
 ***
-## USUARIO OBJETIVO:
+## USUARIO OBJETIVO
 
 Toda persona entre 18 y 35 años que haya interactuado con el videojuego POKEMON GO y que haya dejado de lado el juego por distintos motivos(trabajo, estudio, etc) y que requiera información sobre alguna especie de Pokémon.
 ***
@@ -17,7 +17,7 @@ Buscando en la web se evidenció que hacen falta páginas enfocadas, exclusivame
 ***
 
 ## HISTORIAS DE USUARIO
-**CONTEXTO GENERAL**: - Nuestras historias de usuario se definen en base al siguiente contexto: 
+**CONTEXTO GENERAL** : Nuestras historias de usuario se definen en base al siguiente contexto: 
 
  "Después de mucho tiempo estás volviendo a retomar el juego y quieres empezar a pelear en gimnasios pero, necesitas saber más sobre las debilidades y caracteristicas generales de tus pokemon para asi poder pelear.
 
@@ -48,10 +48,9 @@ Buscando en la web se evidenció que hacen falta páginas enfocadas, exclusivame
 ## DISEÑO DE LA INTERFAZ DE USUARIO
 **Prototipo de baja fidelidad** : Hemos trabajado aqui, los primeros pasos para llegar a la aplicación web y definir la información que contendrá esta misma, además de sus elementos.
 
-![Login](imag/LOGIN.png)
+![LOGIN PAPEL](src/imag/LOGIN.png)
 
-![Home](HOME.png)
-
+![HOME PAPEL](src/imag/HOME.png)
 
 ***
 
@@ -68,5 +67,15 @@ durante la presentacion de los demos, el feedback recibido estuvo orientado prin
 
 ***
 **Prototipo de alta fidelidad** : En este diseño de Interfaz de Usuario se utilizó Figma como herramienta de diseño visual.
+
+Prototipo final Figma
+
+![desktop](src/imag/desktop.png)
+
+![movil](src/imag/movil.png)
+
+Link Zeplin
+
+https://zpl.io/b6gZ9EW
 
 ***
